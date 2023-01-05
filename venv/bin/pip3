@@ -1,4 +1,4 @@
-#!/home/gierre/ScrapyManga/venv/bin/python
+#!/home/gierre/ScrapyManga/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
