@@ -11,6 +11,8 @@ BOT_NAME = 'ScrapyManga'
 
 SPIDER_MODULES = ['ScrapyManga.spiders']
 NEWSPIDER_MODULE = 'ScrapyManga.spiders'
+ITEM_PIPELINES = {'ScrapyManga.pipelines.CustomImagePipeline': 1}  #pipeline
+IMAGES_STORE = 'images_local_folder'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -89,4 +91,4 @@ ROBOTSTXT_OBEY = True
 
 # Set settings whose default value is deprecated to a future-proof value
 REQUEST_FINGERPRINTER_IMPLEMENTATION = '2.7'
-TWISTED_REACTOR = 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'
+# TWISTED_REACTOR = 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'
